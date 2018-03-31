@@ -18,7 +18,7 @@
 <td align="center">Simple</td>
 <td align="center">Java</td>
 <td align="center">algorithm</td>
-<td align="center"><a href="https://leetcode-cn.com/problems/two-sum/description/">>></a></td>
+<td align="center"><a href="https://leetcode.com/problems/two-sum/description/">>></a></td>
 </tr>
 </tbody>
 </table>
