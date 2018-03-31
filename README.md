@@ -3,32 +3,20 @@
 <table>
 <thead>
 <tr>
-<th>表头1</th>
-<th>表头2</th>
+<th align="center">Squence</th>
+<th align="left">Problem</th>
+<th align="center">Level</th>
+<th align="center">Language</th>
+<th align="center">Tags</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>表格单元</td>
-<td>表格单元</td>
+<td align="center">#1</td>
+<td align="left"><a href="https://github.com/snoopyzzz/LeetCode/blob/master/LeetCode/src/byJava/TwoSum.java">TwoSum.java</a></td>
+<td align="center">Simple</td>
+<td align="center">Java</td>
+<td align="center">algorithm</td>
 </tr>
-<tr>
-<td>表格单元</td>
-<td>表格单元</td>
-</tr></tbody></table>
-<table>
-<thead>
-<tr>
-<th>表头1</th>
-<th>表头2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>表格单元</td>
-<td>表格单元</td>
-</tr>
-<tr>
-<td>表格单元</td>
-<td>表格单元</td>
-</tr></tbody></table>
+</tbody>
+</table>
