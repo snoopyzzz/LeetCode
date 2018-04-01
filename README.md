@@ -18,7 +18,7 @@
 <td align="center">Easy</td>
 <td align="center">Java</td>
 <td align="center">algorithm</td>
-<td align="center"><a href="https://leetcode.com/problems/two-sum/description/">>></a></td>
+<td align="center"><a href="https://leetcode.com/problems/two-sum/description/">Problem</a></td>
 </tr>
 <tr>
 <td align="center">#9</td>
@@ -26,7 +26,7 @@
 <td align="center">Easy</td>
 <td align="center">Java</td>
 <td align="center">algorithm</td>
-<td align="center"><a href="https://leetcode.com/problems/palindrome-number/description/">>></a></td>
+<td align="center"><a href="https://leetcode.com/problems/palindrome-number/description/">Problem</a></td>
 </tr>
 </tbody>
 </table>
