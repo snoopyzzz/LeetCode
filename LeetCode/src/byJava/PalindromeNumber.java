@@ -1,9 +1,7 @@
 package byJava;
 
 
-/*题目：
- * #9 判断一个数是否为回文数
- */
+//题目：#9 判断一个数是否为回文数
 
 
 /*思路：
@@ -18,7 +16,7 @@ package byJava;
 public class PalindromeNumber {
 	public static void main(String[] args){
 		int a = 123321;
- 		System.out.println(isPalindrome(a));
+ 		System.out.println(isPalindrome_2(a));
 	} 
 	
     public static boolean isPalindrome(int x) {
@@ -46,4 +44,40 @@ public class PalindromeNumber {
 		return true;
     }
    
+    /*优解：
+     * 
+     * 思路：
+     * 1、先通过log的方法计算出x的位数
+     * 2、通过 %10（求余）算出最后一位数
+     * 3、通过 /pow（10，i）算出第一位数
+     * 4、判断第一位数和第二位是是否相同，如果不相同，立即return false
+     * 5、如果两数相同，则进行进行循环
+     * 6、通过x = (int) (x%Math.pow(10, i));清除第一位数
+     * 7、通过x /= 10;  清除最后一位数
+     * 8、i-=2
+     * 
+     * 优点：
+     * 
+     */
+    
+    public static boolean isPalindrome_2(int x) {
+    	
+    	if(x<0 || (x%10 == 0 && x!= 0)) {
+    		return false;
+    	}
+
+    	int m = (int) Math.log10(x); //implies 10^m < x < 10^(m+1) 
+    	int i=m;
+    	while(i >= 0 ){ 
+    		int a = x%10; // 得到最后一位数
+    		int b = (int) (x/Math.pow(10, i)); // 得到第一位数
+    		if(a != b) // 
+    			return false;
+    		x = (int) (x%Math.pow(10, i)); // 清除第一位数
+    		x /= 10; // 清除最后一位数
+    		i -= 2;
+    	    } 
+    	return true;
+    }
+    
 }
