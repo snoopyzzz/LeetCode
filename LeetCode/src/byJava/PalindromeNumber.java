@@ -57,6 +57,7 @@ public class PalindromeNumber {
      * 8、i-=2
      * 
      * 优点：
+     * 不用把整数存入数组中再进行比较
      * 
      */
     
