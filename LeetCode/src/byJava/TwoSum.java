@@ -1,5 +1,7 @@
 package byJava;
 
+import java.util.*;
+
 /*题目：
  * #1 两数之和
  */
@@ -44,9 +46,34 @@ public class TwoSum {
         		}    			
         	}
         } 
+        
         arr[0] = index1;
         arr[1] = index2;      
         return arr;
-        
     }
+    
+    /*优解
+     * 
+     * 思路：
+     * 先判断Map中是否有这个数，如果它存在，则找到了一个方案（将这个数和 i 一起return 返回）
+     * 没有则将这个插入Map中。
+     * 这样可以在一次循环中边检查边插入元素；
+     * 
+     * 优点：
+     * 只进行一个循环，边检查边插入，时间复杂度由 O(n^2)减为O(n)
+     */
+    public static int[]twoSum_2(int[] nums,int target){
+    	Map<Integer, Integer> map = new HashMap<>();
+    	for(int i = 0; i < nums.length; i++) {
+    		int complement = target - nums[i];
+    		if(map.containsKey(complement)) {
+    			return new int[] {map.get(complement),i};
+    		}
+    		map.put(nums[i], i);
+    	}
+    	throw new IllegalArgumentException("No two sum solution");
+    }
+    
+    
+    
 }
