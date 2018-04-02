@@ -16,10 +16,10 @@ package byJava;
 public class PalindromeNumber {
 	public static void main(String[] args){
 		int a = 123321;
- 		System.out.println(isPalindrome_2(a));
+ 		System.out.println(new PalindromeNumber().isPalindrome(a));
 	} 
 	
-    public static boolean isPalindrome(int x) {
+    public boolean isPalindrome(int x) {
     	
     	if(x<0 || (x%10 == 0 && x!= 0)) {
     		return false;
@@ -61,7 +61,7 @@ public class PalindromeNumber {
      * 
      */
     
-    public static boolean isPalindrome_2(int x) {
+    public boolean isPalindrome_2(int x) {
     	
     	if(x<0 || (x%10 == 0 && x!= 0)) {
     		return false;
